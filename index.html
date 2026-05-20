@@ -1,201 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>RESPAWN VENDING LLC | Snacks Respawn Here</title>
-  <meta name="description" content="RESPAWN VENDING LLC is a Minnesota-based automated vending company bringing interactive cotton candy robots and specialty vending experiences to high-traffic locations." />
-  <link rel="stylesheet" href="styles.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RESPAWN VENDING</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="cursor-glow"></div>
 
-  <header class="site-header">
-    <nav class="nav">
-      <a class="brand" href="#top">
-        <img src="respawn-logo.jpeg" alt="RESPAWN VENDING logo" />
-        <span>RESPAWN VENDING</span>
-      </a>
+<section class="contact-section" id="contact">
+  <div>
+    <h2>Want a RESPAWN machine at your location?</h2>
+    <p>
+      If you manage a family, youth, entertainment, or high-traffic location in Minnesota, reach out for placement information.
+    </p>
+  </div>
 
-      <div class="nav-links">
-        <a href="#drops">Machines</a>
-        <a href="#partner">Partner</a>
-        <a href="#why">Why Us</a>
-        <a href="#contact" class="nav-button">Contact</a>
-      </div>
-    </nav>
-  </header>
+  <form class="contact-form" action="https://formsubmit.co/respawnvending@gmail.com" method="POST">
 
-  <main id="top">
-    <section class="hero">
-      <div class="hero-bg-word">RESPAWN</div>
+    <input type="hidden" name="_subject" value="New RESPAWN VENDING Inquiry">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
 
-      <div class="hero-logo-wrap">
-        <img class="hero-logo" src="respawn-logo.jpeg" alt="RESPAWN VENDING alien snack logo" />
-      </div>
+    <input type="text" name="name" placeholder="Name" required />
+    <input type="text" name="business" placeholder="Business / Location Name" required />
+    <input type="email" name="email" placeholder="Email" required />
 
-      <div class="hero-copy">
-        <p class="eyebrow">Minnesota automated vending</p>
-        <h1>Snacks respawn here.</h1>
-        <p>
-          Interactive vending for arcades, malls, play spaces, theaters, bowling alleys, trampoline parks, and family entertainment locations.
-        </p>
+    <textarea name="message" placeholder="Tell us about your location" required></textarea>
 
-        <div class="hero-actions">
-          <a href="#partner" class="btn primary">Host a Machine</a>
-          <a href="#drops" class="btn ghost">View Concepts</a>
-        </div>
-      </div>
-    </section>
+    <button type="submit">Send Inquiry</button>
 
-    <section class="ticker">
-      <div class="ticker-track">
-        <span>🍭 Cotton Candy Robot</span>
-        <span>⚡ Specialty Vending</span>
-        <span>🎮 Youth-Focused Brand</span>
-        <span>👾 Snacks Respawn Here</span>
-        <span>📍 Minnesota Locations</span>
-        <span>🍭 Cotton Candy Robot</span>
-        <span>⚡ Specialty Vending</span>
-        <span>🎮 Youth-Focused Brand</span>
-        <span>👾 Snacks Respawn Here</span>
-      </div>
-    </section>
+    <p class="form-note">
+      Inquiries are sent directly to respawnvending@gmail.com.
+    </p>
+  </form>
+</section>
 
-    <section class="drop-section" id="drops">
-      <div class="section-title">
-        <p class="eyebrow">Current launch</p>
-        <h2>Machine drops</h2>
-      </div>
-
-      <div class="drop-grid">
-        <article class="drop-card featured">
-          <div class="drop-badge">Launch Machine</div>
-          <h3>Cotton Candy Robot</h3>
-          <p>Automated cotton candy production with a bright, visual customer experience built for kids, families, and impulse purchases.</p>
-          <ul>
-            <li>Fully automated</li>
-            <li>Owner-serviced 3–4x weekly</li>
-            <li>Great for high-foot-traffic spaces</li>
-          </ul>
-        </article>
-
-        <article class="drop-card">
-          <div class="drop-badge">Next Expansion</div>
-          <h3>Exotic Snack Vending</h3>
-          <p>Rare chips, imported drinks, limited flavors, and internet-friendly snack finds for youth-driven locations.</p>
-        </article>
-
-        <article class="drop-card">
-          <div class="drop-badge">Future Concept</div>
-          <h3>Classic Vending</h3>
-          <p>Drinks, chips, candy, and everyday vending products with stronger branding and modern placement strategy.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="interactive-zone" id="partner">
-      <div class="partner-copy">
-        <p class="eyebrow">For location partners</p>
-        <h2>A vending machine that acts like an attraction.</h2>
-        <p>
-          RESPAWN VENDING gives businesses a low-labor, visually engaging amenity that can generate revenue while giving customers something fun to talk about.
-        </p>
-
-        <div class="partner-list">
-          <div><span>01</span> Revenue-share options</div>
-          <div><span>02</span> Trial placement available</div>
-          <div><span>03</span> We clean, stock, and service</div>
-          <div><span>04</span> Social media friendly experience</div>
-        </div>
-
-        <a href="#contact" class="btn primary">Request Placement Info</a>
-      </div>
-
-      <div class="arcade-panel">
-        <div class="panel-screen">
-          <div class="screen-line">LOCATION MATCH FOUND</div>
-          <div class="screen-big">READY TO RESPAWN?</div>
-          <div class="screen-stats">
-            <span>ARCADES</span>
-            <span>MALLS</span>
-            <span>ZOOS</span>
-            <span>THEATERS</span>
-            <span>BOWLING</span>
-            <span>PLAY AREAS</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="why-section" id="why">
-      <div class="section-title">
-        <p class="eyebrow">Why it works</p>
-        <h2>Built for attention.</h2>
-      </div>
-
-      <div class="why-grid">
-        <div class="why-card">
-          <h3>Visual Product</h3>
-          <p>Cotton candy is colorful, nostalgic, kid-friendly, and naturally shareable.</p>
-        </div>
-        <div class="why-card">
-          <h3>Low Labor</h3>
-          <p>Machines operate automatically while RESPAWN handles cleaning, restocking, and upkeep.</p>
-        </div>
-        <div class="why-card">
-          <h3>Brand Culture</h3>
-          <p>Gaming-inspired branding gives the business a stronger identity than traditional vending.</p>
-        </div>
-        <div class="why-card">
-          <h3>Scalable Model</h3>
-          <p>The concept can expand into snacks, drinks, specialty vending, and future machine formats.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact-section" id="contact">
-      <div>
-        <p class="eyebrow">Contact</p>
-        <h2>Want a RESPAWN machine at your location?</h2>
-        <p>
-          If you manage a family, youth, entertainment, or high-traffic location in Minnesota, reach out for placement information.
-        </p>
-      </div>
-
-      <form class="contact-form">
-        <input type="text" placeholder="Name" />
-        <input type="text" placeholder="Business / Location Name" />
-        <input type="email" placeholder="Email" />
-        <textarea placeholder="Tell us about your location"></textarea>
-        <button type="button">Send Inquiry</button>
-        <p class="form-note">Placeholder form. Connect this to Formspree, Google Forms, or another form service before publishing.</p>
-      </form>
-    </section>
-  </main>
-
-  <footer>
-    <img src="respawn-logo.jpeg" alt="RESPAWN VENDING logo" />
-    <p>© 2026 RESPAWN VENDING LLC. Snacks Respawn Here.</p>
-  </footer>
-
-  <script>
-    const glow = document.querySelector('.cursor-glow');
-    window.addEventListener('mousemove', (e) => {
-      glow.style.left = e.clientX + 'px';
-      glow.style.top = e.clientY + 'px';
-    });
-
-    const cards = document.querySelectorAll('.drop-card, .why-card, .arcade-panel');
-    cards.forEach(card => {
-      card.addEventListener('mousemove', (e) => {
-        const rect = card.getBoundingClientRect();
-        const x = e.clientX - rect.left;
-        const y = e.clientY - rect.top;
-        card.style.setProperty('--x', x + 'px');
-        card.style.setProperty('--y', y + 'px');
-      });
-    });
-  </script>
 </body>
 </html>
