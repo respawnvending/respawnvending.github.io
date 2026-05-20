@@ -104,9 +104,8 @@
 
         <div class="partner-list">
           <div><span>01</span> Revenue-share options</div>
-          <div><span>02</span> Trial placement available</div>
-          <div><span>03</span> We clean, stock, and service</div>
-          <div><span>04</span> Social media friendly experience</div>
+          <div><span>02</span> We clean, stock, and service</div>
+          <div><span>03</span> Social media friendly experience</div>
         </div>
 
         <a href="#contact" class="btn primary">Request Placement Info</a>
@@ -163,13 +162,17 @@
         </p>
       </div>
 
-      <form class="contact-form">
-        <input type="text" placeholder="Name" />
-        <input type="text" placeholder="Business / Location Name" />
-        <input type="email" placeholder="Email" />
-        <textarea placeholder="Tell us about your location"></textarea>
-        <button type="button">Send Inquiry</button>
-        <p class="form-note">Placeholder form. Connect this to Formspree, Google Forms, or another form service before publishing.</p>
+      <form class="contact-form" action="https://formspree.io/f/xwvzvaqo" method="POST">
+        <input type="hidden" name="_subject" value="New RESPAWN VENDING Website Inquiry">
+
+        <input type="text" name="name" placeholder="Name" required />
+        <input type="text" name="business" placeholder="Business / Location Name" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <textarea name="message" placeholder="Tell us about your location" required></textarea>
+
+        <button type="submit">Send Inquiry</button>
+
+        <p class="form-note">Inquiries are sent securely through Formspree.</p>
       </form>
     </section>
   </main>
